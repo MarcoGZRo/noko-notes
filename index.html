@@ -4,40 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Noko Notes</title>
-    <link rel="stylesheet" href="css/style-principal.css">
+    <link rel="stylesheet" href="styles/main.css">
     <meta name="description" content="Pagina principal de Noko Notes">
-    <link rel="icon" href="img/icons/noko-icon.ico">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="/src/assets/img/ui/icons/icon-portal-noko.ico">
 </head>
 <body>
-<header>
-    <div>
-        <img src="img/noko-logo.png" alt="Logo de Noko Notes">
-        <h1>Noko Notes</h1>
+<header class="header">
+    <div class="header__logo">
+        <img class="header__image" src="/src/assets/img/branding/logo-portal-noko.png" alt="NokoNotes">
+        <span class="header__text">NokoNotes</span>
     </div>
-    <nav>
-        <ul>
-            <li><a href="">INICIO</a></li>
-            <li><a href="">SOPORTE</a></li>
-            <li><a href="">SOBRE NOSOTROS</a></li>
-            <li><a href="">CONTACTO</a></li>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="#">Inicio</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Soporte</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Contacto</a>
+            </li>
         </ul>
     </nav>
 </header>
-<main>
-    <section>
-        <div>
-            <h2>¡Bienvenido!</h2>
-            <a href="views/inicio.html">Comenzar →</a>
-            <p>
+<main class="main">
+    <section class="hero main__hero">
+        <div class="hero__content">
+            <h2 class="hero__title">¡Bienvenido!</h2>
+            <a class="hero__link" href="views/app.html">Comenzar →</a>
+            <p class="hero__text">
                 Bienvenido a la nueva herramienta de gestión de tareas y horarios
                 de manera personalizada. Ideal para estudiantes y profesores.
             </p>
         </div>
-        <div>
-            <img src="img/banner.png" alt="Ilustración de estudiante organizando tareas">
+        <div class="hero__container">
+            <img class="hero__image" src="/src/assets/img/branding/deco-portal.png" alt="Ilustración de estudiante organizando tareas">
         </div>
     </section>
 </main>
+<footer class="footer">
+    <p class="footer__text">Copyright©2026 MAKOSTM, CORP. Todos los derechos reservados</p>
+</footer>
 </body>
 </html>
